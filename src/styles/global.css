@@ -1,32 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 
 body {
-    color: ghostwhite;
-    background-color: #09090b;
-    font-family: 'Noto Sans', sans-serif;
+	color: ghostwhite;
+	background-color: #09090b;
+	background-image: url("/background.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family: "Noto Sans", sans-serif;
+}
+
+@media (max-width: 768px) {
+	body {
+		background-image: url("/background2.jpg");
+		background-size: cover;
+		background-position: center;
+	}
 }
 
 .jp {
-    font-family: 'Noto Sans JP', sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+	font-family: "Noto Sans JP", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
 }
 
 .ko {
-    font-family: 'Noto Sans KR', sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+	font-family: "Noto Sans KR", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
 }
 
 .arc-player {
-    color: #2D50C2;
+	color: #2d50c2;
 }
 
 .arc-quantity {
-    color: #F7E24A;
+	color: #f7e24a;
 }
 
 .arc-item {
-    color: #34C759;
+	color: #34c759;
 }
