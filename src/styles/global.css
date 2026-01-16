@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+body {
+    color: ghostwhite;
+    background-color: #09090b;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.jp {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.ko {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.arc-player {
+    color: #2D50C2;
+}
+
+.arc-quantity {
+    color: #F7E24A;
+}
+
+.arc-item {
+    color: #34C759;
+}
