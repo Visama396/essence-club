@@ -20,7 +20,7 @@ export default function ArcNeededItem({ item }) {
 			<p>
 				<strong className="arc-player">{item.who_needs}</strong> necesita{" "}
 				<strong className="arc-quantity">{item.how_many}</strong>{" "}
-				<strong className="arc-item">{itemData.name.es}</strong>
+				<strong className="arc-item">{itemData.name.en}</strong>
 			</p>
 		</div>
 	);

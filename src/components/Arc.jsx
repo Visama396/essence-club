@@ -7,7 +7,6 @@ import ArcItemList from "./ArcItemList";
 export default function Arc() {
 	const [items, setItems] = useState([]);
 	const [allItems, setAllItems] = useState([]);
-	const [loading, setLoading] = useState(true);
 
 	useEffect(() => {
 		async function getItems() {
@@ -21,7 +20,6 @@ export default function Arc() {
 				.then((response) => response.json())
 				.then((data) => {
 					setAllItems(data.items);
-					setLoading(false);
 				});
 		}
 
@@ -29,7 +27,7 @@ export default function Arc() {
 	}, []);
 
 	return (
-		<main className="p-4">
+		<main className="flex flex-col gap-4 p-4">
 			<header>
 				<h1 className="text-center text-2xl md:text-4xl font-bold">
 					ARC Raiders

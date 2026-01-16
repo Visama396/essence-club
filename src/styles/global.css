@@ -5,7 +5,7 @@ body {
 	color: ghostwhite;
 	background-color: #09090b;
 	background-image: url("/background.jpg");
-	background-size: contain;
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	font-family: "Noto Sans", sans-serif;
@@ -41,4 +41,29 @@ body {
 
 .arc-item {
 	color: #34c759;
+}
+
+.Uncommon {
+	color: rgb(156, 163, 175);
+	--tw-shadow-color: rgb(156, 163, 175);
+}
+
+.Common {
+    color: rgb(74, 222, 128);
+    --tw-shadow-color: rgb(74, 222, 128);
+}
+
+.Rare {
+    color: rgb(96, 165, 250);
+    --tw-shadow-color: rgb(96, 165, 250);
+}
+
+.Epic {
+    color: rgb(244, 114, 182);
+    --tw-shadow-color: rgb(244, 114, 182);
+}
+
+.Legendary {
+    color: rgb(251, 146, 60);
+    --tw-shadow-color: rgb(251, 146, 60);
 }

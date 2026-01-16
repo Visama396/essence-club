@@ -9,7 +9,7 @@ export default function ArcNeededItems({ items }) {
 		);
 	}
 	return (
-		<div className="py-4">
+		<div>
 			{items.map((item) => (
 				<ArcNeededItem item={item} key={item.id} />
 			))}

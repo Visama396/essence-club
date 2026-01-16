@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export default function ArcItemDetails({ id }) {
+export default function ArcItemDetails({ id, searchTerm }) {
 	const [item, setItem] = useState(null);
 
 	useEffect(() => {
@@ -14,9 +14,9 @@ export default function ArcItemDetails({ id }) {
 	}
 
 	return (
-		<div className="p-2 rounded-md bg-slate-900/50 border-2 border-slate-700 cursor-pointer transition duration-300 hover:bg-slate-800/60 hover:border-slate-600 flex flex-row items-center gap-2 backdrop-blur-lg">
+		<div className={`${item.rarity} p-2 rounded-md bg-slate-900/50 shadow-sm border-2 cursor-pointer transition duration-400 hover:shadow-md hover:bg-slate-800/60 ${id.includes(searchTerm.toLowerCase()) ? 'flex' : 'hidden'} flex-row items-center gap-2 backdrop-blur-lg`}>
 			<img className="size-10" src={item.imageFilename} alt={item.id} />
-			<p className={`font-semibold ${item.rarity}`}>{item.name.en}</p>
+			<p className='font-semibold'>{item.name.en}</p>
 			<p className="text-sm text-gray-500 flex-1 text-right pr-4">Reciclar</p>
 		</div>
 	);
