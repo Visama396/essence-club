@@ -31,12 +31,18 @@ export default function Arc() {
 			<header>
 				<h1 className="text-center text-2xl md:text-4xl font-bold">
 					ARC Raiders
-				</h1>
+        </h1>
 			</header>
 
 			<ArcNeededItems items={items} />
 
-			<ArcItemList items={allItems} />
+      <ArcItemList items={allItems} />
+
+      <footer className='py-8 bg-slate-800/50 backdrop-blur-lg rounded-md'>
+        <p className='p-4 text-amber-200 text-center text-xl'>
+          Powered by <a className='text-amber-300 font-black hover:text-amber-400 transition duration-300 underline' href="https://github.com/Mahcks/arcraiders-data-api" target="_blank">Mahcks API</a>
+        </p>
+      </footer>
 		</main>
 	);
 }
